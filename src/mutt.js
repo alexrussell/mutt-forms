@@ -164,6 +164,7 @@ export default class Mutt {
 
             this.form.setAttribute('method', 'POST')
             this.form.setAttribute('action', '')
+            this.form.setAttribute('onSubmit', 'return false;')
             this.form.setAttribute('class', 'mutt-form')
 
             if(this.mulipart) {
