@@ -42,7 +42,7 @@ export default class Mutt {
         }
 
         this.container = container
-        this.mulipart = false
+        this.multipart = false
         this.callback = callback
         this.id = null
         this.debug = debug
@@ -166,7 +166,7 @@ export default class Mutt {
             this.form.setAttribute('action', '')
             this.form.setAttribute('class', 'mutt-form')
 
-            if(this.mulipart) {
+            if(this.multipart) {
                 this.form.setAttribute('enctype', 'multipart/form-data')
             }
 
